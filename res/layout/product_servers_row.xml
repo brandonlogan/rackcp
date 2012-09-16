@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <ImageButton
+    	android:id="@+id/serverActions"
+    	android:contentDescription="Server Actions"
+    	android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:layout_marginBottom="5dp"
+    	android:layout_marginRight="15dp"
+    	android:layout_marginTop="5dp"
+    	android:background="@drawable/gear_button"
+    	android:gravity="center_vertical"
+    	android:paddingBottom="5dp"
+    	android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+    	android:paddingTop="5dp"
+    	android:src="@drawable/gear" />
+    
+     <TextView android:id="@+id/serverName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+        
+</LinearLayout>
