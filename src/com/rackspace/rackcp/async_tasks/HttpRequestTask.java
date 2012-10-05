@@ -10,12 +10,12 @@ public class HttpRequestTask extends AsyncTask<String, String, SimpleHttpRespons
 
     Context mContext;
     ProgressDialog progressBar;
-    private AsyncTaskCompleteListener<SimpleHttpResponse> callback;
+    private IAsyncTaskCompleteListener<SimpleHttpResponse> callback;
     String message;
     boolean showProgress;
     
     public HttpRequestTask(Context context, 
-                              AsyncTaskCompleteListener<SimpleHttpResponse> cb,
+                              IAsyncTaskCompleteListener<SimpleHttpResponse> cb,
                               String m){
         super();
         this.mContext = context;
@@ -25,7 +25,7 @@ public class HttpRequestTask extends AsyncTask<String, String, SimpleHttpRespons
     }
     
     public HttpRequestTask(Context context, 
-                              AsyncTaskCompleteListener<SimpleHttpResponse> cb,
+                              IAsyncTaskCompleteListener<SimpleHttpResponse> cb,
                               String m, boolean showProgress){
         super();
         this.mContext = context;

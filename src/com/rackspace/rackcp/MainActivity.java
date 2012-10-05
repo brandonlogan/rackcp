@@ -23,7 +23,8 @@ public class MainActivity extends FragmentActivity {
         mTabs = (SwipeyTabs)this.findViewById(R.id.swipeyTabs);
         mFragmentPagerAdapter = new CPFragmentPagerAdapter(
                                         this.getSupportFragmentManager(),
-                                        this, mPager);
+                                        this, mPager, Login.authData);
+        Login.authData = null;
         mPager.setAdapter(mFragmentPagerAdapter);
         mTabs.setAdapter(mFragmentPagerAdapter);
         mPager.setOnPageChangeListener(mTabs);

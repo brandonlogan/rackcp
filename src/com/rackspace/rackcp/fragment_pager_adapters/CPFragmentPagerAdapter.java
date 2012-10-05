@@ -1,6 +1,7 @@
 package com.rackspace.rackcp.fragment_pager_adapters;
 
 import com.rackspace.rackcp.adapters.ISwipeyTabsAdapter;
+import com.rackspace.rackcp.domain.Auth;
 import com.rackspace.rackcp.domain.Server;
 import com.rackspace.rackcp.fragments.ServersFragment;
 import com.rackspace.rackcp.views.SwipeyTabs;
@@ -25,7 +26,7 @@ public class CPFragmentPagerAdapter extends FragmentPagerAdapter
     private String[] titles;
     
     public CPFragmentPagerAdapter(FragmentManager fm, Context context, 
-                                      ViewPager pager) {
+                                      ViewPager pager, Auth authData) {
         super(fm);
         this.mContext = context;
         this.mPager = pager;

@@ -3,9 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" 
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:padding="10dp">
-
+    android:layout_height="fill_parent">
+    <TextView
+    	android:id="@+id/statusColor"
+    	android:layout_width="10dp"
+    	android:layout_height="fill_parent"
+    	android:layout_marginRight="10dp"
+    	android:background="@drawable/status_color_indicator"/>
     <ImageButton
     	android:id="@+id/serverActions"
     	android:contentDescription="Server Actions"

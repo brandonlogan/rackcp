@@ -9,9 +9,12 @@ import android.widget.EditText;
 
 import com.rackspace.rackcp.async_tasks.AuthTask;
 import com.rackspace.rackcp.clients.AuthClient;
+import com.rackspace.rackcp.domain.Auth;
 
 public class Login extends Activity {
     /** Called when the activity is first created. */
+    
+    public static Auth authData;
     
     private EditText username;
     private EditText password;
@@ -25,6 +28,8 @@ public class Login extends Activity {
         final Context context = this;
         username = (EditText)this.findViewById(R.id.UsernameET);
         password = (EditText)this.findViewById(R.id.PasswordET);
+        username.setText("johnbrandonlogan");
+        password.setText("andromeda1");
         signInButton = (Button)this.findViewById(R.id.SignInButton);
         url = this.getResources().getText(R.string.auth_url).toString();
         signInButton.setOnClickListener(new View.OnClickListener()

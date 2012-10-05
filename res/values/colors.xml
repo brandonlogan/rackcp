@@ -5,5 +5,13 @@
     <color name="light_red">#E33232</color>
     <color name="dark_red">#AA0000</color>
     <color name="manilla">#FAFFBD</color>
+    <color name="medium_gray">#999</color>
+    <color name="dark_gray">#222</color>
+    <color name="ok_status_start">#008B4F</color>
+    <color name="ok_status_end">#14BD81</color>
+    <color name="warning_status_start">#E17F00</color>
+    <color name="warning_status_end">#FFBB1E</color>
+    <color name="error_status_start">#8B004F</color>
+    <color name="error_status_end">#BD1481</color>
 	
 </resources>

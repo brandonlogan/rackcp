@@ -1,5 +1,6 @@
 package com.rackspace.rackcp.async_tasks;
 
+import com.rackspace.rackcp.Login;
 import com.rackspace.rackcp.MainActivity;
 import com.rackspace.rackcp.clients.AuthClient;
 import com.rackspace.rackcp.domain.Auth;
@@ -9,7 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 
 public class AuthTask implements 
-                                AsyncTaskCompleteListener<SimpleHttpResponse>{
+                                IAsyncTaskCompleteListener<SimpleHttpResponse>{
 
     private Context mContext;
     private AuthClient mClient;
@@ -28,9 +29,7 @@ public class AuthTask implements
     @Override
     public void onTaskComplete(SimpleHttpResponse result) {
         Intent intent = new Intent(mContext, MainActivity.class);
-        Auth data = Auth.deserialize(result);
-        intent.putExtra("auth_token", data.authToken);
-        intent.putExtra("cloud_servers_address", data.cloudServersAddress);
+        Login.authData = Auth.deserialize(result);
         mContext.startActivity(intent);
         
     }
