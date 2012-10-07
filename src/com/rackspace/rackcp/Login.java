@@ -28,8 +28,8 @@ public class Login extends Activity {
         final Context context = this;
         username = (EditText)this.findViewById(R.id.UsernameET);
         password = (EditText)this.findViewById(R.id.PasswordET);
-        username.setText("cloudqabrandon");
-        password.setText("Pass1234");
+/*        username.setText("cloudqabrandon");
+        password.setText("Pass1234");*/
         signInButton = (Button)this.findViewById(R.id.SignInButton);
         url = this.getResources().getText(R.string.auth_url).toString();
         signInButton.setOnClickListener(new View.OnClickListener()
